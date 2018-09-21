@@ -14,6 +14,10 @@
  *
  * Method 'POST'
  *
+ * Route with params
+ *
+ * Router::get('page/([0-9]+)','controller/action/$1');
+ *
  * Router::post('','page/index');
  */
 Router::get('','page/index');

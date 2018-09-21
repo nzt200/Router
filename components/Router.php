@@ -38,8 +38,8 @@ class Router
 
     public function detectSubdomain()
     {
-        $settings = require_once ROOT . '/config/config.php';
-        if(preg_match("~^([a-z-0-9][a-z-0-9-]{3,20})(.)({$settings['app_url']})$~",$_SERVER['HTTP_HOST'])) {
+        require_once ROOT . '/config/config.php';
+        if(preg_match("~^([a-z-0-9][a-z-0-9-]{3,20})(.)({" .  APP_URL . ")$~",$_SERVER['HTTP_HOST'])) {
             return true;
         } else {
             return false;

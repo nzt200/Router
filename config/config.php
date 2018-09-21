@@ -5,6 +5,4 @@
  * Date: 18.09.2018
  * Time: 21:24
  */
-return array(
-   'app_url' => 'nzt200',
-);
+    define('APP_URL','nzt200');
